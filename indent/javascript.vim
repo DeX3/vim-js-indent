@@ -135,11 +135,11 @@ function s:GetIndent(lnum)
 		endif
 	endif
 
-	call s:Log('>> Checking if this line (', a:lnum,
-				\ ') start a fluent chain')
-	if s:StartsFluentAccess(a:lnum)
-		return ind + s:sw()
-	endif
+	" call s:Log('>> Checking if this line (', a:lnum,
+	" 			\ ') start a fluent chain')
+	" if s:StartsFluentAccess(a:lnum)
+	" 	return ind + s:sw()
+	" endif
 
 	call s:Log('>> Checking if previous non-blank line (', pnbnum,
 				\ ') is a switch label')
